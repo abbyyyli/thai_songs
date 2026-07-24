@@ -2212,13 +2212,24 @@ function filterStudy(id,q){q=(q||'').toLowerCase();document.querySelectorAll(`#$
 function showPage(id,btn){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.top .btn').forEach(b=>b.classList.remove('active-tab'));if(btn)btn.classList.add('active-tab');if(id==='favorites')renderFavorites(document.getElementById('favSearch').value||'');if(id==='review')renderReview('all');window.scrollTo({top:0,behavior:'smooth'})}
 function setMode(mode,btn){const app=document.getElementById('app');app.className='wrap';if(mode!=='normal')app.classList.add(mode);state.mode=mode;document.querySelectorAll('.toolbar .btn').forEach(b=>b.classList.remove('mode-on'));if(btn)btn.classList.add('mode-on');save()}
 function expandAll(){document.querySelectorAll('.song-section').forEach(s=>s.classList.add('open'))}function collapseAll(){document.querySelectorAll('.song-section').forEach(s=>s.classList.remove('open'))}
+function prepareThaiTTS(text){
+  return String(text || '')
+    .replace(/\+/g, ' ')
+    .replace(/\b(?:V|N|verb|noun|person|place|clause|state)\b/gi, ' ')
+    .replace(/動詞|名詞|子句|狀態/g, ' ')
+    .replace(/人/g, 'คน')
+    .replace(/地方/g, 'ที่')
+    .replace(/／/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 let queueToken=0;function speak(text,btn){
   if(!('speechSynthesis' in window))return alert('此瀏覽器不支援 TTS');
   queueToken++;
   speechSynthesis.cancel();
   document.querySelectorAll('.playing').forEach(el=>el.classList.remove('playing'));
   const card = btn && btn.classList ? (btn.classList.contains('line')||btn.classList.contains('study-card') ? btn : btn.closest('.line,.study-card')) : null;
-  const u=new SpeechSynthesisUtterance(text);
+  const u=new SpeechSynthesisUtterance(prepareThaiTTS(text));
   u.lang='th-TH';
   u.rate=.86;
   if(card)card.classList.add('playing');
@@ -2228,7 +2239,7 @@ let queueToken=0;function speak(text,btn){
   u.onerror=clear;
   speechSynthesis.speak(u);
 }
-function speakQueue(lines){if(!('speechSynthesis' in window))return alert('此瀏覽器不支援 TTS');queueToken++;const token=queueToken;speechSynthesis.cancel();let i=0;function next(){if(token!==queueToken||i>=lines.length)return;const u=new SpeechSynthesisUtterance(lines[i++]);u.lang='th-TH';u.rate=.84;u.onend=()=>setTimeout(next,420);speechSynthesis.speak(u)}next()}
+function speakQueue(lines){if(!('speechSynthesis' in window))return alert('此瀏覽器不支援 TTS');queueToken++;const token=queueToken;speechSynthesis.cancel();let i=0;function next(){if(token!==queueToken||i>=lines.length)return;const u=new SpeechSynthesisUtterance(prepareThaiTTS(lines[i++]));u.lang='th-TH';u.rate=.84;u.onend=()=>setTimeout(next,420);speechSynthesis.speak(u)}next()}
 function playVisibleLyrics(){
   const lines=[...document.querySelectorAll('#lyricsList .song-section.open .line:not(.hidden)')]
     .map(el=>el.dataset.thai)
