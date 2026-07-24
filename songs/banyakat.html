@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>บรรยากาศ — Only Monday | Thai Song Lab</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+Thai:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+:root{--bg:#111018;--text:#fff8ef;--muted:#c9c0b7;--soft:#a9a2b5;--line:rgba(255,255,255,.13);--card:rgba(255,255,255,.075);--card2:rgba(255,255,255,.105);--accent:#f2bb6b;--accent2:#9fd7c7;--blue:#91a8d8;--purple:#b69ad8;--rose:#edb4a3;--shadow:0 18px 46px rgba(0,0,0,.28);--radius:22px;--thai:'Sarabun','Noto Sans Thai','Leelawadee UI',Tahoma,sans-serif;--ui:'Inter','Noto Sans TC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--zh:'Noto Serif TC','Noto Serif CJK TC','Songti TC','PMingLiU',serif;--en:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{min-height:100vh;color:var(--text);font-family:var(--ui);line-height:1.65;background:radial-gradient(circle at 8% -8%,rgba(242,187,107,.22),transparent 33%),radial-gradient(circle at 92% 6%,rgba(145,168,216,.20),transparent 34%),radial-gradient(circle at 40% 58%,rgba(182,154,216,.14),transparent 42%),linear-gradient(145deg,#14121c 0%,#181724 44%,#101018 100%);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}button,input{font-family:inherit}.thai,.th{font-family:var(--thai)}.roman,.rom{font-family:var(--mono)}.top{position:sticky;top:0;z-index:50;background:rgba(15,15,22,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.top-inner{max-width:1120px;margin:auto;padding:13px 18px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.brand{font-weight:800;color:var(--accent);letter-spacing:.02em}.nav{display:flex;gap:8px;flex-wrap:wrap}.btn{font-family:var(--ui);border:1px solid var(--line);background:rgba(255,255,255,.055);color:var(--muted);border-radius:999px;padding:8px 13px;font-size:13px;cursor:pointer;transition:.15s ease}.btn:hover,.btn.active-tab,.mode-on{border-color:rgba(242,187,107,.85);color:var(--accent);background:rgba(242,187,107,.12)}.wrap{max-width:1120px;margin:0 auto;padding:26px 18px 74px}.hero{padding:18px 0 22px}.kicker{font-family:var(--ui);color:var(--accent);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.hero-main{display:flex;gap:18px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}.song-name{font-family:var(--thai);font-size:44px;line-height:1.12;margin:6px 0 5px}.subtitle{color:var(--muted);font-size:15px}.quick-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.meta-pill{font-family:var(--ui);border:1px solid rgba(242,187,107,.38);background:rgba(242,187,107,.10);color:#f5d6a3;border-radius:999px;padding:5px 10px;font-size:12.5px}.page{display:none;animation:fade .18s ease}.page.active{display:block}@keyframes fade{from{opacity:.55;transform:translateY(4px)}to{opacity:1;transform:none}}.glass{background:linear-gradient(145deg,rgba(255,255,255,.095),rgba(255,255,255,.045));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(14px)}.overview-layout{display:grid;grid-template-columns:1fr;gap:18px}.overview-card{padding:22px}.overview-title{font-family:var(--ui);font-size:13px;letter-spacing:.16em;color:var(--accent);font-weight:800;text-transform:uppercase;margin-bottom:14px}.statement{font-family:var(--zh);font-size:20px;line-height:1.8;margin-bottom:18px;color:#fff7ee;letter-spacing:.01em}.focus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.focus{border:1px solid rgba(159,215,199,.32);background:rgba(159,215,199,.075);border-radius:16px;padding:12px}.focus b{display:block;font-size:13px;color:#e9fff8;margin-bottom:4px}.focus span{font-family:var(--zh);font-size:12px;color:var(--muted);line-height:1.72}.progress-wrap{margin-top:18px}.progress-row{display:flex;align-items:center;gap:10px;margin:9px 0}.progress-row .lbl{width:86px;color:var(--muted);font-size:12px}.bar{height:10px;flex:1;border-radius:999px;background:rgba(255,255,255,.10);overflow:hidden;border:1px solid var(--line)}.bar>span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:999px}.pct{width:42px;text-align:right;color:#f5d6a3;font-size:12px}.study{padding:18px;margin-top:18px}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.hint{font-family:var(--zh);color:var(--muted);font-size:13px;line-height:1.75;margin-top:12px}.lyrics-tools{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.search{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.07);color:var(--text);border-radius:999px;padding:10px 14px;font-size:14px;margin-bottom:14px}.search::placeholder{color:var(--soft)}.song-section{margin:16px 0;overflow:hidden}.sec-head{width:100%;border:none;background:linear-gradient(135deg,rgba(242,187,107,.16),rgba(255,255,255,.035));color:var(--text);padding:15px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;text-align:left}.sec-title{display:block;font-size:15px;font-weight:800}.sec-sub{display:block;color:var(--muted);font-size:12px;margin-top:2px}.sec-body{display:none;padding:13px}.song-section.open .sec-body{display:block}.arrow{color:var(--muted);transition:.15s}.song-section.open .arrow{transform:rotate(180deg)}.line{position:relative;border:1px solid rgba(255,255,255,.105);background:linear-gradient(145deg,rgba(255,255,255,.078),rgba(255,255,255,.035));border-radius:20px;padding:17px 16px;margin:11px 0;box-shadow:0 10px 28px rgba(0,0,0,.16)}.line.hidden,.study-card.hidden{display:none}.th{font-size:27px;line-height:1.45;font-weight:800;color:#fffaf4}.rom{font-size:13px;color:#e6c58e;margin-top:6px;letter-spacing:.01em}.zh{font-family:var(--ui);font-size:15px;color:#ded7d0;margin-top:4px;line-height:1.72}.en{font-family:var(--en);color:#b9c7e8;font-size:13.5px;margin-top:4px;line-height:1.55}.vocab{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.chip{display:inline-flex;gap:7px;align-items:center;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.07);border-radius:999px;padding:5px 10px;font-size:12px;color:var(--muted);cursor:pointer;transition:.14s ease}.chip:hover,.chip.active{border-color:rgba(242,187,107,.75);background:rgba(242,187,107,.12);color:var(--accent)}.chip b{font-family:var(--thai);font-size:13.5px;color:#fff8ef}.chip-en{font-family:var(--en);font-size:11.5px;color:#bcb3ad}.note{font-family:var(--zh);margin-top:12px;color:#c7beb7;font-size:13px;line-height:1.85;border-left:4px solid var(--accent2);padding:9px 0 9px 12px;background:linear-gradient(90deg,rgba(159,215,199,.08),transparent);border-radius:0 12px 12px 0}.line-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:13px}.round{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);color:var(--muted);border-radius:99px;width:36px;height:36px;cursor:pointer;transition:.14s ease}.round:hover,.round.active{border-color:rgba(242,187,107,.82);color:var(--accent);background:rgba(242,187,107,.13)}.round.learned.active{border-color:var(--accent2);color:var(--accent2);background:rgba(159,215,199,.12)}.study-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:12px;margin-top:14px}.study-card{position:relative;padding:15px 88px 15px 15px;cursor:pointer}.study-card:hover{border-color:rgba(242,187,107,.55);background:linear-gradient(145deg,rgba(242,187,107,.11),rgba(255,255,255,.04))}.study-card .th{font-size:25px}.study-card .rom{font-size:12.5px}.study-card .zh{font-size:13px}.mini-actions{position:absolute;right:12px;top:50%;transform:translateY(-50%);display:flex;gap:6px}.mini-actions .round{width:31px;height:31px;font-size:12px}.level{display:inline-flex;margin-top:8px;border:1px solid rgba(145,168,216,.28);background:rgba(145,168,216,.09);border-radius:999px;padding:3px 8px;color:#c8d5f3;font-size:11px}.fav-block{margin:18px 0}.fav-block h3{font-size:14px;color:var(--accent);margin:0 0 10px;letter-spacing:.06em}
+.collapsible-group{margin:16px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.035)}
+.group-head{width:100%;border:0;background:linear-gradient(135deg,rgba(242,187,107,.12),rgba(255,255,255,.025));color:var(--text);padding:13px 15px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left}
+.group-title{font-family:var(--ui);font-weight:800;color:var(--accent);letter-spacing:.04em}
+.group-count{font-family:var(--ui);font-size:12px;color:var(--muted);margin-left:8px}
+.group-body{display:block;padding:13px}
+.collapsible-group.closed .group-body{display:none}
+.collapsible-group.closed .arrow{transform:rotate(-90deg)}
+.storage-tools{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.import-file{display:none}
+.empty{padding:18px;color:var(--muted);border:1px dashed var(--line);border-radius:18px;text-align:center}.hide-roman .rom{display:none}.hide-zh .zh{display:none}.thai-only .rom,.thai-only .zh,.thai-only .en,.thai-only .note,.thai-only .vocab{display:none}.shadow .note,.shadow .vocab,.shadow .en{display:none}.shadow .line{background:linear-gradient(145deg,rgba(242,187,107,.105),rgba(255,255,255,.035))}footer{font-family:var(--ui);text-align:center;color:var(--muted);font-size:12px;padding:32px}
+.brand-home{
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.brand-home:hover::after{
+  content:"Back to Library";
+  font-size:11px;
+  color:var(--muted);
+  font-weight:500;
+  letter-spacing:0;
+  margin-left:4px;
+}
+@media(max-width:680px){
+  .brand-home:hover::after{content:"";}
+}
+
+@media(max-width:680px){.wrap{padding:20px 16px 64px}.top-inner{align-items:flex-start}.nav{gap:7px}.btn{padding:7px 11px;font-size:12.5px}.song-name{font-size:36px}.quick-meta{margin-top:12px}.focus-grid{grid-template-columns:1fr}.overview-card{padding:18px}.statement{font-size:17px}.th{font-size:24px}.line{padding:15px 14px}.sec-body{padding:10px}.study-list{grid-template-columns:1fr}.study-card{padding-right:86px}.progress-row .lbl{width:76px}}
+
+/* v4 visual reset: use the clean v1 reading-note design + latest v2.6 functions */
+:root{
+  --bg:#111318;
+  --card:#1b1f2a;
+  --card2:#232838;
+  --text:#f7efe8;
+  --muted:#b8aea6;
+  --line:#343948;
+  --accent:#e9a84c;
+  --accent2:#8dc6b5;
+  --rose:#efb0a1;
+  --soft:rgba(233,168,76,.10);
+  --shadow:0 14px 36px rgba(0,0,0,.25);
+  --radius:18px;
+  --thai:'Sarabun','Noto Sans Thai','Leelawadee UI',Tahoma,sans-serif;
+  --ui:'Noto Serif TC','Noto Serif CJK TC','Songti TC','PMingLiU',serif;
+  --zh:'Noto Serif TC','Noto Serif CJK TC','Songti TC','PMingLiU',serif;
+  --en:'Noto Serif TC','Noto Serif CJK TC','Songti TC','PMingLiU',serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+body{
+  background:radial-gradient(circle at top left,#2b2234 0,#111318 45%,#0e0f12 100%) !important;
+  color:var(--text);
+  font-family:var(--zh);
+  font-size:14px;
+  line-height:1.75;
+}
+.top{
+  background:rgba(17,19,24,.88);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+.top-inner{
+  max-width:1100px;
+  padding:12px 18px;
+}
+.brand{
+  color:var(--accent);
+  font-family:var(--zh);
+  font-size:14px;
+  font-weight:700;
+}
+.btn{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:12px;
+  font-family:var(--zh);
+}
+.btn:hover,.btn.active-tab,.mode-on{
+  border-color:var(--accent);
+  color:var(--accent);
+  background:rgba(233,168,76,.08);
+}
+.wrap{
+  max-width:1100px;
+  padding:24px 18px 60px;
+}
+.hero{
+  padding:34px 0 22px;
+}
+.kicker{
+  color:var(--accent);
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:700;
+  font-family:var(--zh);
+}
+.song-name{
+  font-family:var(--thai);
+  font-size:42px;
+  line-height:1.2;
+  margin:7px 0;
+}
+.subtitle{
+  color:var(--muted);
+  max-width:760px;
+  font-size:14px;
+}
+.quick-meta{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+.meta-pill{
+  border:1px solid rgba(233,168,76,.35);
+  background:var(--soft);
+  color:#f2d4a1;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:12px;
+  font-family:var(--zh);
+}
+.glass,.overview-card,.study,.song-section,.section,.collapsible-group{
+  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025)) !important;
+  border:1px solid var(--line) !important;
+  border-radius:var(--radius) !important;
+  box-shadow:var(--shadow);
+  backdrop-filter:none;
+}
+.overview-layout{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:16px;
+  align-items:stretch;
+}
+.overview-card,.study{
+  padding:18px;
+  margin-top:0;
+}
+.overview-title{
+  font-family:var(--zh);
+  font-size:15px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:10px;
+  font-weight:700;
+}
+.statement{
+  font-family:var(--zh);
+  color:var(--text);
+  font-size:14px;
+  line-height:1.8;
+  margin-bottom:10px;
+}
+.focus-grid{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.focus{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  border-radius:999px;
+  padding:5px 9px;
+}
+.focus b{
+  display:inline;
+  color:var(--muted);
+  font-family:var(--zh);
+  font-size:12px;
+  font-weight:400;
+}
+.focus span{
+  display:none;
+}
+.toolbar{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:18px 0;
+}
+.hint{
+  color:var(--muted);
+  font-family:var(--zh);
+  font-size:13px;
+  line-height:1.75;
+}
+.progress-wrap{display:none}
+.search{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  border-radius:999px;
+  padding:9px 13px;
+  font-size:13px;
+  font-family:var(--zh);
+}
+.song-section{
+  margin:16px 0;
+  overflow:hidden;
+  scroll-margin-top:82px;
+}
+.sec-head{
+  background:linear-gradient(135deg,rgba(233,168,76,.12),rgba(255,255,255,.025));
+  color:var(--text);
+  padding:14px 16px;
+}
+.sec-title{
+  font-weight:700;
+  font-size:14px;
+}
+.sec-sub{
+  color:var(--muted);
+  font-size:12px;
+}
+.sec-body{
+  padding:14px;
+}
+.line{
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.025);
+  border-radius:14px;
+  padding:12px 64px 12px 12px;
+  margin:10px 0;
+  box-shadow:none;
+}
+.th{
+  font-family:var(--thai);
+  font-size:18px;
+  font-weight:600;
+  line-height:1.55;
+}
+.rom{
+  font-family:var(--mono);
+  color:#d0b79a;
+  font-size:12px;
+  margin-top:4px;
+}
+.zh{
+  font-family:var(--zh);
+  color:var(--text);
+  font-size:13px;
+  line-height:1.7;
+}
+.en{
+  font-family:var(--en);
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+.note{
+  margin-top:7px;
+  color:var(--muted);
+  font-family:var(--zh);
+  font-size:12.5px;
+  border-left:3px solid var(--accent2);
+  padding:0 0 0 9px;
+  background:transparent;
+  border-radius:0;
+}
+.vocab{
+  gap:6px;
+  margin-top:8px;
+}
+.chip{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  border-radius:999px;
+  padding:4px 9px;
+  font-size:11.5px;
+  color:var(--muted);
+}
+.chip b{
+  font-family:var(--thai);
+  color:var(--text);
+  font-size:12.5px;
+}
+.chip-en{
+  font-family:var(--zh);
+  color:var(--muted);
+  font-size:11.5px;
+}
+.round{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+  border-radius:99px;
+  width:30px;
+  height:30px;
+  cursor:pointer;
+}
+.round:hover,.round.active{
+  border-color:var(--accent);
+  color:var(--accent);
+  background:rgba(233,168,76,.08);
+}
+.round.learned.active{
+  border-color:var(--accent2);
+  color:var(--accent2);
+  background:rgba(141,198,181,.09);
+}
+.line-actions,.mini-actions{
+  position:absolute !important;
+  right:12px !important;
+  top:50% !important;
+  bottom:auto !important;
+  transform:translateY(-50%) !important;
+  display:flex;
+  gap:6px;
+  margin:0 !important;
+}
+.study-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:8px;
+  margin-top:12px;
+}
+.study-card{
+  border:1px solid var(--line) !important;
+  border-radius:12px !important;
+  padding:10px 76px 10px 10px !important;
+  background:rgba(255,255,255,.025) !important;
+  box-shadow:none !important;
+}
+.study-card:hover,.line:hover{
+  border-color:var(--accent) !important;
+  background:rgba(233,168,76,.06) !important;
+}
+.study-card .th{
+  font-size:18px;
+}
+.study-card .rom{
+  font-size:12px;
+}
+.study-card .zh,.study-card .en{
+  font-size:12px;
+}
+.level:empty{display:none!important}
+.line.playing,.study-card.playing{
+  border-color:var(--accent)!important;
+  background:rgba(233,168,76,.08)!important;
+  box-shadow:none!important;
+}
+.line.playing::after,.study-card.playing::after{
+  content:"▶";
+  position:absolute;
+  right:13px;
+  top:10px;
+  font-size:11px;
+  color:var(--accent);
+  border:0;
+  background:transparent;
+  padding:0;
+}
+.group-head{
+  background:linear-gradient(135deg,rgba(233,168,76,.12),rgba(255,255,255,.025));
+}
+.group-title{
+  color:var(--accent);
+  font-family:var(--zh);
+}
+footer{
+  color:var(--muted);
+  font-size:12px;
+  padding:30px;
+  font-family:var(--zh);
+}
+
+/* Desktop */
+@media(min-width:1024px){
+  .overview-layout{grid-template-columns:1.2fr .8fr}
+}
+
+/* iPad */
+@media(max-width:1023px){
+  .wrap{max-width:820px}
+  .overview-layout{grid-template-columns:1fr}
+  .study-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .song-name{font-size:38px}
+}
+
+/* Phone */
+@media(max-width:680px){
+  .top-inner{align-items:flex-start}
+  .nav{gap:7px}
+  .btn{padding:7px 11px;font-size:12px}
+  .wrap{padding:20px 16px 64px}
+  .song-name{font-size:34px}
+  .overview-card,.study{padding:16px}
+  .study-list{grid-template-columns:1fr}
+  .th{font-size:18px}
+  .study-card .th{font-size:18px}
+  .line{padding:12px 62px 12px 12px}
+}
+
+
+
+/* v4.2: sans-serif typography + real long-term progress + separate review round */
+:root{
+  --ui:'Inter','Noto Sans TC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --zh:'Inter','Noto Sans TC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --en:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+body,
+.btn,
+.brand,
+.kicker,
+.overview-title,
+.statement,
+.hint,
+.focus b,
+.meta-pill,
+.search,
+.zh,
+.en,
+.note,
+.chip-en,
+.group-title,
+footer{
+  font-family:var(--ui) !important;
+}
+
+/* Restore the real learned-progress panel from v2.4 */
+.progress-wrap{
+  display:block !important;
+  margin-top:18px !important;
+}
+.progress-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:9px 0;
+}
+.progress-row .lbl{
+  width:86px;
+  color:var(--muted);
+  font-size:12px;
+}
+.bar{
+  height:10px;
+  flex:1;
+  border-radius:999px;
+  background:rgba(255,255,255,.10);
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+.bar>span{
+  display:block;
+  height:100%;
+  width:0;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  border-radius:999px;
+}
+.pct{
+  width:42px;
+  text-align:right;
+  color:#f5d6a3;
+  font-size:12px;
+}
+
+/* Compact controls that do not cover card text */
+.line,
+.study-card{
+  cursor:pointer;
+}
+.line{
+  position:relative;
+  padding-right:72px !important;
+}
+.study-card{
+  position:relative;
+  padding-right:76px !important;
+}
+.line-actions,
+.mini-actions{
+  position:absolute !important;
+  right:12px !important;
+  top:50% !important;
+  bottom:auto !important;
+  transform:translateY(-50%) !important;
+  display:flex;
+  gap:6px;
+  margin:0 !important;
+}
+.line-actions .round,
+.mini-actions .round{
+  width:30px !important;
+  height:30px !important;
+  font-size:12px !important;
+  opacity:.82;
+}
+.line-actions .round:hover,
+.line-actions .round.active,
+.mini-actions .round:hover,
+.mini-actions .round.active{
+  opacity:1;
+}
+.round.reviewed.active{
+  border-color:var(--accent2);
+  color:var(--accent2);
+  background:rgba(141,198,181,.10);
+}
+
+/* Review reset stays intentionally quiet */
+.review-reset{
+  margin-left:auto;
+  padding:5px 9px !important;
+  font-size:11px !important;
+  opacity:.72;
+}
+.review-reset:hover{
+  opacity:1;
+}
+
+@media(max-width:1023px){
+  .progress-row .lbl{width:76px;}
+}
+@media(max-width:680px){
+  .progress-row .lbl{width:64px;}
+  .line{padding-right:68px !important;}
+  .study-card{padding-right:74px !important;}
+  .line-actions,.mini-actions{right:11px !important;}
+  .review-reset{margin-left:0;}
+}
+
+
+/* v4.3: restore Overview card descriptions */
+.focus-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:10px !important;
+  margin-top:12px !important;
+}
+.focus{
+  border:1px solid rgba(141,198,181,.32) !important;
+  background:rgba(141,198,181,.07) !important;
+  border-radius:16px !important;
+  padding:12px !important;
+}
+.focus b{
+  display:block !important;
+  font-size:13px !important;
+  color:#e9fff8 !important;
+  margin-bottom:4px !important;
+  font-weight:700 !important;
+}
+.focus span{
+  display:block !important;
+  font-family:var(--ui) !important;
+  color:var(--muted) !important;
+  font-size:12px !important;
+  line-height:1.72 !important;
+}
+@media(max-width:680px){
+  .focus-grid{grid-template-columns:1fr !important;}
+}
+
+
+/* v4.4: Overview lesson-summary pills below the two cards */
+.overview-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:14px;
+}
+.overview-pill{
+  display:inline-flex;
+  align-items:baseline;
+  gap:7px;
+  max-width:100%;
+  border:1px solid rgba(141,198,181,.30);
+  background:rgba(141,198,181,.065);
+  border-radius:999px;
+  padding:7px 11px;
+  color:var(--muted);
+  font-family:var(--ui);
+  font-size:12px;
+  line-height:1.45;
+}
+.overview-pill b{
+  color:#e9fff8;
+  font-size:12px;
+  font-weight:700;
+  white-space:nowrap;
+}
+.overview-pill span{
+  color:var(--muted);
+}
+@media(max-width:680px){
+  .overview-pills{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:7px;
+    margin-top:12px;
+  }
+  .overview-pill{
+    border-radius:14px;
+    padding:9px 11px;
+  }
+}
+
+
+/* v4.5: Thai typography — Sarabun */
+.thai,.th,.song-name,.chip b{
+  font-family:var(--thai) !important;
+}
+.song-name{font-weight:700;}
+.th{font-weight:600;}
+
+
+/* Header Thai typography: restore the original Noto Sans Thai for the song title only */
+.song-name{
+  font-family:'Noto Sans Thai','Leelawadee UI',Tahoma,sans-serif !important;
+}
+
+
+.quick-meta{display:none!important;}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-inner"><a class="brand btn brand-home" href="../index.html" title="Back to Song Library">♪ Thai Song Lab</a><div class="nav"><button class="btn active-tab" onclick="showPage('overview',this)">Overview</button><button class="btn" onclick="showPage('lyrics',this)">Lyrics</button><button class="btn" onclick="showPage('patterns',this)">Patterns</button><button class="btn" onclick="showPage('vocab',this)">Vocab</button><button class="btn" onclick="showPage('favorites',this)">Favorites <span id="favBadge">0</span></button><button class="btn" onclick="showPage('review',this)">Review</button><button class="btn" onclick="speakAll()">全文播放</button></div></div></div>
+<div class="wrap" id="app"><input class="import-file" id="globalStateImportFile" type="file" accept=".json,application/json" onchange="importState(event)">
+<section class="hero"><div class="kicker">Song Lesson 009 · <span id="artist"></span></div><div class="hero-main"><div><h1 class="song-name" id="title"></h1><div class="subtitle roman" id="subtitle"></div></div></div></section>
+<section class="page active" id="overview"><div class="overview-layout"><div class="glass overview-card"><div class="overview-title">Overview</div><p class="statement">歌曲描寫一個人回到過去曾與戀人共度時光的店裡。周圍仍是熟悉的場景，身旁卻只剩自己與酒杯；舊日氣氛不斷喚起回憶，也讓他明白那段感情已無法重新來過。</p><div class="progress-wrap" id="progressBox"></div></div><div class="glass study"><div class="overview-title">Study Mode</div><div class="toolbar"><button class="btn" onclick="setMode('normal',this)">全部</button><button class="btn" onclick="setMode('hide-zh',this)">隱藏中文</button><button class="btn" onclick="setMode('hide-roman',this)">隱藏拼音</button><button class="btn" onclick="setMode('shadow',this)">Shadow</button><button class="btn" onclick="setMode('thai-only',this)">只看泰文</button></div><p class="hint">Learned 會保留並計入 Overview 進度；跨裝置請使用匯出 / 匯入 JSON。</p></div></div>
+<div class="overview-pills" aria-label="Lesson summary"><span class="overview-pill"><b>核心主題</b><span>Longing · Memory · Lost Love</span></span><span class="overview-pill"><b>學習難度</b><span>A2 學習者可以理解主要故事與高頻結構；B1 學習者可進一步吸收時間感、持續感、省略語序與情緒歌詞中的自然搭配。</span></span><span class="overview-pill"><b>優先句型</b><span>ทำให้ + 人 + 動詞 / ยังคง + 動詞／狀態 / ไม่มีทาง + 動詞</span></span></div></section>
+<main class="page" id="lyrics"><div class="lyrics-tools"><button class="btn" onclick="expandAll()">全部展開</button><button class="btn" onclick="collapseAll()">全部收合</button><button class="btn" onclick="playVisibleLyrics()">播放目前歌詞</button></div><input class="search" id="lyricsSearch" placeholder="搜尋 Lyrics：Thai / Romanization / English / 中文" oninput="filterLyrics(this.value)"><div id="lyricsList"></div></main>
+<section class="page" id="patterns"><div class="glass overview-card"><div class="overview-title">Patterns / 可直接拿去用的句型</div><input class="search" id="patternSearch" placeholder="搜尋 Patterns" oninput="filterStudy('patternList',this.value)"><div class="study-list" id="patternList"></div></div></section>
+<section class="page" id="vocab"><div class="glass overview-card"><div class="overview-title">Vocabulary & Chunks</div><input class="search" id="vocabSearch" placeholder="搜尋 Vocabulary" oninput="filterStudy('vocabList',this.value)"><div class="study-list" id="vocabList"></div></div></section>
+<section class="page" id="favorites"><div class="glass overview-card"><div class="overview-title">Favorites</div><div class="storage-tools"><button class="btn" onclick="exportState()">匯出 JSON</button><button class="btn" onclick="document.getElementById('globalStateImportFile').click()">匯入 JSON</button></div><input class="search" id="favSearch" placeholder="搜尋收藏" oninput="renderFavorites(this.value)"><div id="favoriteList"></div></div></section>
+<section class="page" id="review"><div class="glass overview-card"><div class="overview-title">Review</div><div class="storage-tools"><button class="btn" onclick="exportState()">匯出 JSON</button><button class="btn" onclick="document.getElementById('globalStateImportFile').click()">匯入 JSON</button><input class="import-file" id="stateImportFile" type="file" accept=".json,application/json" onchange="importState(event)"></div><div class="lyrics-tools"><button class="btn" onclick="renderReview('all')">All Learned</button><button class="btn" onclick="renderReview('fav')">Only Favorites</button><button class="btn" onclick="shuffleReview()">Shuffle</button><button class="btn review-reset" onclick="resetReview()">Reset Review</button></div><p class="hint">Review 只收錄已學會的項目；按 ✓ 只會完成本輪複習，不會影響 Overview 的 Learned 進度。</p><div id="reviewList"></div></div></section>
+</div><footer>Thai Song Lab v4.5 · Sarabun Thai typography</footer>
+<script>
+const SONG = {
+  "slug": "banyakat",
+  "title": "บรรยากาศ",
+  "artist": "Only Monday",
+  "romanTitle": "ban-yaa-gàat",
+  "englishTitle": "Atmosphere",
+  "level": "A2–B1",
+  "summary": "歌曲描寫一個人回到過去曾與戀人共度時光的店裡。周圍仍是熟悉的場景，身旁卻只剩自己與酒杯；舊日氣氛不斷喚起回憶，也讓他明白那段感情已無法重新來過。",
+  "focus": [
+    "用 เคย、ยังคง、ยังไม่ 描寫過去經驗、持續狀態與尚未完成的情緒",
+    "掌握 ทำให้ + 人 + 動詞，以及 ไม่มีทาง + 動詞 的高頻結構",
+    "理解 เดิม ๆ、ที่เดิม ๆ、วนแบบนี้ทุกครั้งไป 所營造的反覆與困在回憶中的感覺",
+    "練習歌詞中省略主詞與重複詞帶出的自然口語節奏"
+  ],
+  "difficulty": "A2 學習者可以理解主要故事與高頻結構；B1 學習者可進一步吸收時間感、持續感、省略語序與情緒歌詞中的自然搭配。",
+  "topPatterns": [
+    "ทำให้ + 人 + 動詞",
+    "ยังคง + 動詞／狀態",
+    "ไม่มีทาง + 動詞"
+  ],
+  "storageKey": "thai-song-lab-v2-banyakat",
+  "sections": [
+    {
+      "id": "verse-1",
+      "title": "Verse 1",
+      "sub": "人群中的孤單與舊地重遊",
+      "lines": [
+        {
+          "id": "l001",
+          "thai": "อยู่ท่ามกลางคนที่มีอยู่เป็นล้าน",
+          "roman": "yùu thâam-glaang khon thîi mii yùu bpen láan",
+          "english": "I’m surrounded by millions of people.",
+          "chinese": "身處在成千上萬的人群之中。",
+          "note": "อยู่ท่ามกลาง… 是「置身於……之中」。มีอยู่เป็นล้าน 不是精確數字，而是誇張地表示「有多達數百萬之多」。",
+          "chips": [
+            "p01",
+            "v01",
+            "v02"
+          ]
+        },
+        {
+          "id": "l002",
+          "thai": "แต่ทำไมหัวใจฉันมันกลับอ้างว้าง",
+          "roman": "dtɛ̀ɛ tham-mai hǔa-jai chǎn man glàp âang-wáang",
+          "english": "But why does my heart feel lonely instead?",
+          "chinese": "但為什麼我的心反而如此寂寞？",
+          "note": "กลับ 在這裡不是「回去」，而是「反而、卻」。มัน 放在 หัวใจฉัน 後面，是帶情緒的口語回指。",
+          "chips": [
+            "p02",
+            "v03",
+            "v04"
+          ]
+        },
+        {
+          "id": "l003",
+          "thai": "เหมือนว่ารอบตัวที่มันวุ่นวาย",
+          "roman": "mʉ̌an wâa rɔ̂ɔp-dtua thîi man wûn-waai",
+          "english": "It feels as though all the chaos around me",
+          "chinese": "彷彿周遭的一切喧鬧混亂，",
+          "note": "เหมือนว่า… 用來引出主觀感受，相當於「彷彿……」。這一句必須接下一句才完整。",
+          "chips": [
+            "p03",
+            "v05",
+            "v06"
+          ]
+        },
+        {
+          "id": "l004",
+          "thai": "กำลังค่อย ๆ หายไป",
+          "roman": "gam-lang khɔ̂i khɔ̂i hǎai bpai",
+          "english": "is slowly fading away.",
+          "chinese": "正在一點一點地消失。",
+          "note": "กำลัง 表示正在進行；ค่อย ๆ 表示逐漸、慢慢地。兩者合用會強化過程正在緩慢發生的感覺。",
+          "chips": [
+            "p04",
+            "v07",
+            "v08"
+          ]
+        },
+        {
+          "id": "l005",
+          "thai": "ร้านที่ฉันเคยพาเธอไปตอนนั้น",
+          "roman": "ráan thîi chǎn khəəy phaa thəə bpai dtɔɔn nán",
+          "english": "The place I used to take you to back then—",
+          "chinese": "那間我當時曾帶妳去過的店，",
+          "note": "เคย + 動詞 表示「曾經做過」。พา + 人 + ไป 是「帶某人去」。ร้าน 在情境中可理解為店家、餐廳或酒吧。",
+          "chips": [
+            "p05",
+            "v09",
+            "v10"
+          ]
+        },
+        {
+          "id": "l006",
+          "thai": "ตอนนี้ไม่มีใครมีเพียงแค่ตัวฉัน",
+          "roman": "dtɔɔn-níi mâi mii khrai mii phiiang khɛ̂ɛ dtua chǎn",
+          "english": "now there’s no one here, only me.",
+          "chinese": "如今一個人也沒有，只剩下我自己。",
+          "note": "มีเพียงแค่… 是帶歌詞感的「僅有……」。日常口語更常直接說 มีแค่ฉันคนเดียว。",
+          "chips": [
+            "p06",
+            "v11",
+            "v12"
+          ]
+        },
+        {
+          "id": "l007",
+          "thai": "กับแก้วที่มันรินบาง ๆ",
+          "roman": "gàp gɛ̂ɛw thîi man rin baang baang",
+          "english": "with a glass being lightly filled.",
+          "chinese": "陪著我的，只有那只被淺淺斟滿的杯子。",
+          "note": "ริน 是「斟、倒入飲料」。บาง ๆ 原義是「薄薄地」，在這裡帶有酒被少量、緩緩斟入杯中的畫面感。",
+          "chips": [
+            "v13",
+            "v14"
+          ]
+        },
+        {
+          "id": "l008",
+          "thai": "มันให้ฉันนั้นคิดถึงเธอ",
+          "roman": "man hâi chǎn nán khít-thʉ̌ng thəə",
+          "english": "It makes me miss you.",
+          "chinese": "這一切讓我想起妳、想念妳。",
+          "note": "ให้ 在此具有「使、讓」的功能，語意接近 ทำให้。ฉันนั้น 中的 นั้น 主要為歌詞節奏與強調。",
+          "chips": [
+            "p07",
+            "v15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chorus-1",
+      "title": "Chorus 1",
+      "sub": "熟悉的氣氛喚回無法挽回的愛",
+      "lines": [
+        {
+          "id": "l009",
+          "thai": "บรรยากาศเดิม ๆ ที่เดิม ๆ ทำให้ฉันคิดถึงใคร",
+          "roman": "ban-yaa-gàat dəəm dəəm thîi dəəm dəəm tham hâi chǎn khít-thʉ̌ng khrai",
+          "english": "The same old atmosphere, the same old place, makes me miss someone.",
+          "chinese": "熟悉的氣氛、熟悉的地方，讓我想起了某個人。",
+          "note": "ทำให้ + 人 + 動詞 是非常實用的使役結構。「ใคร」表面是「誰」，此處其實指那個彼此都知道的人。",
+          "chips": [
+            "p08",
+            "v16",
+            "v17"
+          ]
+        },
+        {
+          "id": "l010",
+          "thai": "อยู่ภายในใจ อยู่ในใจ ยังจดจำทุกเรื่องราว",
+          "roman": "yùu phaai-nai jai yùu nai jai yang jòt-jam thúk rʉ̂ang-raao",
+          "english": "Deep in my heart, still in my heart, I remember every story.",
+          "chinese": "深藏在心裡、留在心裡，我依然記得所有往事。",
+          "note": "ยัง + 動詞 表示「仍然……」。จดจำ 比 จำ 更有「銘記、牢記」的語感，較適合歌詞或正式表達。",
+          "chips": [
+            "p09",
+            "v18",
+            "v19"
+          ]
+        },
+        {
+          "id": "l011",
+          "thai": "ภาพนั้นยังคงเป็นเธอ ที่ฉันคงไม่ได้เจอ",
+          "roman": "phâap nán yang khong bpen thəə thîi chǎn khong mâi dâai jəə",
+          "english": "That image is still you—the one I probably won’t see again.",
+          "chinese": "那幅畫面裡依然是妳，而我大概再也見不到妳了。",
+          "note": "ยังคง 表示某個狀態持續不變。後面的 คง 是推測語氣「大概、恐怕」，同一句中的兩個 คง 功能不同。",
+          "chips": [
+            "p10",
+            "p11",
+            "v20"
+          ]
+        },
+        {
+          "id": "l012",
+          "thai": "ไม่มีทางอีกแล้ว",
+          "roman": "mâi mii thaang ìik lɛ́ɛw",
+          "english": "There’s no chance anymore.",
+          "chinese": "已經再也沒有可能了。",
+          "note": "ไม่มีทาง 是強烈的「不可能、沒有辦法」。อีกแล้ว 放在否定句中，表示「再也不……了」。",
+          "chips": [
+            "p12",
+            "v21"
+          ]
+        },
+        {
+          "id": "l013",
+          "thai": "อยู่กับฉากเดิม ๆ ที่เดิม ๆ วนแบบนี้ทุกครั้งไป",
+          "roman": "yùu gàp chàak dəəm dəəm thîi dəəm dəəm won bɛ̀ɛp níi thúk khráng bpai",
+          "english": "I stay with the same old scenes in the same old place, repeating like this every time.",
+          "chinese": "留在相同的場景、相同的地方，每一次都這樣反覆循環。",
+          "note": "วนแบบนี้ 是「像這樣一直循環」。ทุกครั้งไป 帶有「每次總是如此」的慣常與無奈感。",
+          "chips": [
+            "p13",
+            "v22",
+            "v23"
+          ]
+        },
+        {
+          "id": "l014",
+          "thai": "อยู่ภายในใจ แค่ในใจ ยังไม่ลืมภาพอดีต",
+          "roman": "yùu phaai-nai jai khɛ̂ɛ nai jai yang mâi lʉʉm phâap à-dìit",
+          "english": "It remains inside my heart, only in my heart; I still haven’t forgotten the past.",
+          "chinese": "一切只留在心裡，而我依然沒有忘記過去的畫面。",
+          "note": "ยังไม่ + 動詞 表示「到現在仍未……」，重點是狀態截至此刻尚未改變。",
+          "chips": [
+            "p14",
+            "v24",
+            "v25"
+          ]
+        },
+        {
+          "id": "l015",
+          "thai": "รักนั้นที่เราเคยผ่าน รักนี้ที่ไม่มีทาง",
+          "roman": "rák nán thîi rao khəəy phàan rák níi thîi mâi mii thaang",
+          "english": "That love we once went through—this love that has no way",
+          "chinese": "那段我們曾經走過的愛，這段已經不可能……",
+          "note": "ผ่าน 在 รักที่เราเคยผ่าน 中不是單純「經過」，而是「共同經歷、一起走過」。句意延續至下一句。",
+          "chips": [
+            "p15",
+            "v26"
+          ]
+        },
+        {
+          "id": "l016",
+          "thai": "ทำให้ดีกว่านี้",
+          "roman": "tham hâi dii gwàa níi",
+          "english": "to be made any better than this.",
+          "chinese": "再變得比現在更好了。",
+          "note": "ทำให้ดีขึ้น 是「改善」；歌詞使用 ดีกว่านี้，強調已沒有辦法讓這段關係變得更好。",
+          "chips": [
+            "p16",
+            "v27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verse-2",
+      "title": "Verse 2",
+      "sub": "回想曾經如夢般的幸福",
+      "lines": [
+        {
+          "id": "l017",
+          "thai": "นึกเรื่องดี ๆ ที่มีในตอนนั้น",
+          "roman": "nʉ́k rʉ̂ang dii dii thîi mii nai dtɔɔn nán",
+          "english": "I think back to the good things we had back then.",
+          "chinese": "我想起那時候曾有過的美好事情。",
+          "note": "นึกเรื่อง… 是「想到……」。若要明確表示突然想起，也常說 นึกถึงเรื่อง… 或 นึกขึ้นได้ว่า…。",
+          "chips": [
+            "p17",
+            "v28"
+          ]
+        },
+        {
+          "id": "l018",
+          "thai": "ที่ฉันและเธอเคย เคยเป็นอย่างที่ฝัน",
+          "roman": "thîi chǎn lɛ́ thəə khəəy khəəy bpen yàang thîi fǎn",
+          "english": "when you and I once—once were just as we had dreamed.",
+          "chinese": "那時我和妳曾經、曾經活成了夢想中的模樣。",
+          "note": "เคย 的重複主要是音樂節奏與情緒強調。เป็นอย่างที่ฝัน 是「成為／呈現夢想中的樣子」。",
+          "chips": [
+            "p18",
+            "v29"
+          ]
+        },
+        {
+          "id": "l019",
+          "thai": "ฉันนั้นโชคดีที่เคยมีเธอ",
+          "roman": "chǎn nán chôok-dii thîi khəəy mii thəə",
+          "english": "I was lucky to have had you.",
+          "chinese": "我很幸運，曾經擁有過妳。",
+          "note": "โชคดีที่… 是「很幸運能夠……」。เคยมีเธอ 將這份擁有清楚放在已經結束的過去。",
+          "chips": [
+            "p19",
+            "v30"
+          ]
+        },
+        {
+          "id": "l020",
+          "thai": "อยู่ในภาพความทรงจำ",
+          "roman": "yùu nai phâap khwaam-song-jam",
+          "english": "within the picture in my memory.",
+          "chinese": "存在於我的記憶畫面之中。",
+          "note": "ภาพความทรงจำ 是帶畫面感的「記憶中的景象」，比單獨使用 ความทรงจำ 更具視覺性。",
+          "chips": [
+            "v31"
+          ]
+        },
+        {
+          "id": "l021",
+          "thai": "โต๊ะที่มันเคยมีเธออยู่ตรงนั้น",
+          "roman": "dtó thîi man khəəy mii thəə yùu dtrong nán",
+          "english": "The table where you used to sit right there—",
+          "chinese": "那張妳曾坐在那裡的桌子，",
+          "note": "原句直譯為「那張曾經有妳在那裡的桌子」。泰文常用 มี + 人 + อยู่ 表示某人存在於某處。",
+          "chips": [
+            "p20",
+            "v32"
+          ]
+        },
+        {
+          "id": "l022",
+          "thai": "ตอนนี้ไม่มีใครมันเป็นแค่ความฝัน",
+          "roman": "dtɔɔn-níi mâi mii khrai man bpen khɛ̂ɛ khwaam-fǎn",
+          "english": "now no one is there; it was only a dream.",
+          "chinese": "如今那裡空無一人，一切只像是一場夢。",
+          "note": "มันเป็นแค่… 是口語的「那只不過是……」。此處的 มัน 回指眼前留下的景象或過去的幸福。",
+          "chips": [
+            "p21",
+            "v33"
+          ]
+        },
+        {
+          "id": "l023",
+          "thai": "อยู่กับแก้วที่มันรินบาง ๆ",
+          "roman": "yùu gàp gɛ̂ɛw thîi man rin baang baang",
+          "english": "I’m left with a glass being lightly filled.",
+          "chinese": "陪著我的，只剩那只被淺淺斟酒的杯子。",
+          "note": "Review：แก้ว 是杯子；ริน 是斟酒或倒飲料。這個畫面再次將現在的孤單與過去對比。",
+          "chips": [
+            "v13",
+            "v14"
+          ]
+        },
+        {
+          "id": "l024",
+          "thai": "มันทำให้ฉันนั้นคิดถึงเธอ",
+          "roman": "man tham hâi chǎn nán khít-thʉ̌ng thəə",
+          "english": "It makes me miss you.",
+          "chinese": "它讓我再次想念妳。",
+          "note": "Review：ทำให้ + 人 + 動詞，是「使某人……」。相較第一段的 ให้，這裡完整使用 ทำให้。",
+          "chips": [
+            "p08",
+            "v15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chorus-2",
+      "title": "Chorus 2",
+      "sub": "回憶再次循環",
+      "lines": [
+        {
+          "id": "l025",
+          "thai": "บรรยากาศเดิม ๆ ที่เดิม ๆ ทำให้ฉันคิดถึงใคร",
+          "roman": "ban-yaa-gàat dəəm dəəm thîi dəəm dəəm tham hâi chǎn khít-thʉ̌ng khrai",
+          "english": "The same old atmosphere, the same old place, makes me miss someone.",
+          "chinese": "熟悉的氣氛、熟悉的地方，讓我想起了某個人。",
+          "note": "Review：เดิม ๆ 表示與過去相同、沒有改變；ทำให้ 引出這個場景造成的情緒。",
+          "chips": [
+            "p08",
+            "v16",
+            "v17"
+          ]
+        },
+        {
+          "id": "l026",
+          "thai": "อยู่ภายในใจ อยู่ในใจ ยังจดจำทุกเรื่องราว",
+          "roman": "yùu phaai-nai jai yùu nai jai yang jòt-jam thúk rʉ̂ang-raao",
+          "english": "Deep in my heart, still in my heart, I remember every story.",
+          "chinese": "深藏在心裡、留在心裡，我依然記得所有往事。",
+          "note": "Review：ยังจดจำ 表示直到現在仍牢牢記得。",
+          "chips": [
+            "p09",
+            "v18",
+            "v19"
+          ]
+        },
+        {
+          "id": "l027",
+          "thai": "ภาพนั้นยังคงเป็นเธอ ที่ฉันคงไม่ได้เจอ",
+          "roman": "phâap nán yang khong bpen thəə thîi chǎn khong mâi dâai jəə",
+          "english": "That image is still you—the one I probably won’t see again.",
+          "chinese": "那幅畫面裡依然是妳，而我大概再也見不到妳了。",
+          "note": "Review：ยังคง 是持續不變；คงไม่ได้เจอ 是帶悲觀推測的「恐怕見不到了」。",
+          "chips": [
+            "p10",
+            "p11",
+            "v20"
+          ]
+        },
+        {
+          "id": "l028",
+          "thai": "ไม่มีทางอีกแล้ว",
+          "roman": "mâi mii thaang ìik lɛ́ɛw",
+          "english": "There’s no chance anymore.",
+          "chinese": "已經再也沒有可能了。",
+          "note": "Review：ไม่มีทางอีกแล้ว 是強烈且帶終結感的「再也不可能了」。",
+          "chips": [
+            "p12",
+            "v21"
+          ]
+        },
+        {
+          "id": "l029",
+          "thai": "อยู่กับฉากเดิม ๆ ที่เดิม ๆ วนแบบนี้ทุกครั้งไป",
+          "roman": "yùu gàp chàak dəəm dəəm thîi dəəm dəəm won bɛ̀ɛp níi thúk khráng bpai",
+          "english": "I stay with the same old scenes in the same old place, repeating like this every time.",
+          "chinese": "留在相同的場景、相同的地方，每一次都這樣反覆循環。",
+          "note": "Review：วนแบบนี้ 強調思緒與行為反覆困在同一個循環。",
+          "chips": [
+            "p13",
+            "v22",
+            "v23"
+          ]
+        },
+        {
+          "id": "l030",
+          "thai": "อยู่ภายในใจ แค่ในใจ ยังไม่ลืมภาพอดีต",
+          "roman": "yùu phaai-nai jai khɛ̂ɛ nai jai yang mâi lʉʉm phâap à-dìit",
+          "english": "It remains inside my heart, only in my heart; I still haven’t forgotten the past.",
+          "chinese": "一切只留在心裡，而我依然沒有忘記過去的畫面。",
+          "note": "Review：ยังไม่ลืม 表示「到現在仍然沒有忘記」。",
+          "chips": [
+            "p14",
+            "v24",
+            "v25"
+          ]
+        },
+        {
+          "id": "l031",
+          "thai": "รักนั้นที่เราเคยผ่าน รักนี้ที่ไม่มีทาง",
+          "roman": "rák nán thîi rao khəəy phàan rák níi thîi mâi mii thaang",
+          "english": "That love we once went through—this love that has no way",
+          "chinese": "那段我們曾經走過的愛，這段已經不可能……",
+          "note": "Review：เคยผ่าน 指兩人共同經歷過那段感情。",
+          "chips": [
+            "p15",
+            "v26"
+          ]
+        },
+        {
+          "id": "l032",
+          "thai": "ทำให้ดีกว่านี้",
+          "roman": "tham hâi dii gwàa níi",
+          "english": "to be made any better than this.",
+          "chinese": "再變得比現在更好了。",
+          "note": "Review：整體意思是沒有任何方法能再挽救或改善這段愛。",
+          "chips": [
+            "p16",
+            "v27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chorus-3",
+      "title": "Chorus 3",
+      "sub": "第三次重返相同場景",
+      "lines": [
+        {
+          "id": "l033",
+          "thai": "บรรยากาศเดิม ๆ ที่เดิม ๆ ทำให้ฉันคิดถึงใคร",
+          "roman": "ban-yaa-gàat dəəm dəəm thîi dəəm dəəm tham hâi chǎn khít-thʉ̌ng khrai",
+          "english": "The same old atmosphere, the same old place, makes me miss someone.",
+          "chinese": "熟悉的氣氛、熟悉的地方，讓我想起了某個人。",
+          "note": "Review：副歌再次出現，呈現回憶反覆湧現的循環感。",
+          "chips": [
+            "p08",
+            "v16",
+            "v17"
+          ]
+        },
+        {
+          "id": "l034",
+          "thai": "อยู่ภายในใจ อยู่ในใจ ยังจดจำทุกเรื่องราว",
+          "roman": "yùu phaai-nai jai yùu nai jai yang jòt-jam thúk rʉ̂ang-raao",
+          "english": "Deep in my heart, still in my heart, I remember every story.",
+          "chinese": "深藏在心裡、留在心裡，我依然記得所有往事。",
+          "note": "Review：อยู่ในใจ 與 ยังจดจำ 共同強調記憶仍未消失。",
+          "chips": [
+            "p09",
+            "v18",
+            "v19"
+          ]
+        },
+        {
+          "id": "l035",
+          "thai": "ภาพนั้นยังคงเป็นเธอ ที่ฉันคงไม่ได้เจอ",
+          "roman": "phâap nán yang khong bpen thəə thîi chǎn khong mâi dâai jəə",
+          "english": "That image is still you—the one I probably won’t see again.",
+          "chinese": "那幅畫面裡依然是妳，而我大概再也見不到妳了。",
+          "note": "Review：同時對比「記憶中的妳仍存在」與「現實中恐怕再也見不到」。",
+          "chips": [
+            "p10",
+            "p11",
+            "v20"
+          ]
+        },
+        {
+          "id": "l036",
+          "thai": "ไม่มีทางอีกแล้ว",
+          "roman": "mâi mii thaang ìik lɛ́ɛw",
+          "english": "There’s no chance anymore.",
+          "chinese": "已經再也沒有可能了。",
+          "note": "Review：อีกแล้ว 讓否定帶有明確的終止感。",
+          "chips": [
+            "p12",
+            "v21"
+          ]
+        },
+        {
+          "id": "l037",
+          "thai": "อยู่กับฉากเดิม ๆ ที่เดิม ๆ วนแบบนี้ทุกครั้งไป",
+          "roman": "yùu gàp chàak dəəm dəəm thîi dəəm dəəm won bɛ̀ɛp níi thúk khráng bpai",
+          "english": "I stay with the same old scenes in the same old place, repeating like this every time.",
+          "chinese": "留在相同的場景、相同的地方，每一次都這樣反覆循環。",
+          "note": "Review：ทุกครั้งไป 表示每一次最後都走向同樣的結果。",
+          "chips": [
+            "p13",
+            "v22",
+            "v23"
+          ]
+        },
+        {
+          "id": "l038",
+          "thai": "อยู่ภายในใจ แค่ในใจ ยังไม่ลืมภาพอดีต",
+          "roman": "yùu phaai-nai jai khɛ̂ɛ nai jai yang mâi lʉʉm phâap à-dìit",
+          "english": "It remains inside my heart, only in my heart; I still haven’t forgotten the past.",
+          "chinese": "一切只留在心裡，而我依然沒有忘記過去的畫面。",
+          "note": "Review：แค่ในใจ 帶出這段關係如今只能存在於內心。",
+          "chips": [
+            "p14",
+            "v24",
+            "v25"
+          ]
+        },
+        {
+          "id": "l039",
+          "thai": "รักนั้นที่เราเคยผ่าน รักนี้ที่ไม่มีทาง",
+          "roman": "rák nán thîi rao khəəy phàan rák níi thîi mâi mii thaang",
+          "english": "That love we once went through—this love that has no way",
+          "chinese": "那段我們曾經走過的愛，這段已經不可能……",
+          "note": "Review：รักนั้น 指過去的愛；รักนี้ 則像是站在現在回看那段仍留在心中的感情。",
+          "chips": [
+            "p15",
+            "v26"
+          ]
+        },
+        {
+          "id": "l040",
+          "thai": "ทำให้ดีกว่านี้",
+          "roman": "tham hâi dii gwàa níi",
+          "english": "to be made any better than this.",
+          "chinese": "再變得比現在更好了。",
+          "note": "Review：ดีกว่านี้ 是「比這更好」，搭配 ไม่มีทาง 形成完整的無法挽回。",
+          "chips": [
+            "p16",
+            "v27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocal-break",
+      "title": "Vocal Break",
+      "sub": "無實義哼唱",
+      "lines": [
+        {
+          "id": "l041",
+          "thai": "โว้ โว้วโฮ โว้วโฮ (นานันนานันนา นันนานานานันนานา นานันนานันนา นันนานานานันนานา)",
+          "roman": "wôo wôow-hoo wôow-hoo (naa-nan-naa-nan-naa nan-naa-naa-naa-nan-naa-naa naa-nan-naa-nan-naa nan-naa-naa-naa-nan-naa-naa)",
+          "english": "Whoa, whoa-oh, whoa-oh (wordless vocals).",
+          "chinese": "喔、喔喔——（無實義的哼唱）。",
+          "note": "這一段是無實義的 vocalization，用來延續副歌情緒，不需當作一般詞彙學習。",
+          "chips": []
+        },
+        {
+          "id": "l042",
+          "thai": "โว้วโฮโฮ โว้วโฮโฮโฮ (นานันนานันนา นันนานานานันนานา นานันนานันนา นันนานานานันนานา)",
+          "roman": "wôow-hoo-hoo wôow-hoo-hoo-hoo (naa-nan-naa-nan-naa nan-naa-naa-naa-nan-naa-naa naa-nan-naa-nan-naa nan-naa-naa-naa-nan-naa-naa)",
+          "english": "Whoa-oh-oh, whoa-oh-oh-oh (wordless vocals).",
+          "chinese": "喔喔喔——（無實義的哼唱）。",
+          "note": "此處依使用者提供的歌詞保留原貌，不納入核心 Vocabulary 或 Patterns。",
+          "chips": []
+        }
+      ]
+    },
+    {
+      "id": "final-chorus",
+      "title": "Final Chorus",
+      "sub": "記憶留下，關係無法挽回",
+      "lines": [
+        {
+          "id": "l043",
+          "thai": "ภาพนั้นยังคงเป็นเธอ ที่ฉันคงไม่ได้เจอ",
+          "roman": "phâap nán yang khong bpen thəə thîi chǎn khong mâi dâai jəə",
+          "english": "That image is still you—the one I probably won’t see again.",
+          "chinese": "那幅畫面裡依然是妳，而我大概再也見不到妳了。",
+          "note": "Review：最後一次從 ภาพนั้น 開始，直接聚焦於記憶中仍然存在的那個人。",
+          "chips": [
+            "p10",
+            "p11",
+            "v20"
+          ]
+        },
+        {
+          "id": "l044",
+          "thai": "ไม่มีทางอีกแล้ว",
+          "roman": "mâi mii thaang ìik lɛ́ɛw",
+          "english": "There’s no chance anymore.",
+          "chinese": "已經再也沒有可能了。",
+          "note": "Review：沒有任何重新相見或挽回的可能。",
+          "chips": [
+            "p12",
+            "v21"
+          ]
+        },
+        {
+          "id": "l045",
+          "thai": "อยู่กับฉากเดิม ๆ ที่เดิม ๆ วนแบบนี้ทุกครั้งไป",
+          "roman": "yùu gàp chàak dəəm dəəm thîi dəəm dəəm won bɛ̀ɛp níi thúk khráng bpai",
+          "english": "I stay with the same old scenes in the same old place, repeating like this every time.",
+          "chinese": "留在相同的場景、相同的地方，每一次都這樣反覆循環。",
+          "note": "Review：場景沒有改變，但曾經在場的人已經不在。",
+          "chips": [
+            "p13",
+            "v22",
+            "v23"
+          ]
+        },
+        {
+          "id": "l046",
+          "thai": "อยู่ภายในใจ แค่ในใจ ยังไม่ลืมภาพอดีต",
+          "roman": "yùu phaai-nai jai khɛ̂ɛ nai jai yang mâi lʉʉm phâap à-dìit",
+          "english": "It remains inside my heart, only in my heart; I still haven’t forgotten the past.",
+          "chinese": "一切只留在心裡，而我依然沒有忘記過去的畫面。",
+          "note": "Review：現實已結束，但記憶仍留在ใจ。",
+          "chips": [
+            "p14",
+            "v24",
+            "v25"
+          ]
+        },
+        {
+          "id": "l047",
+          "thai": "รักนั้นที่เราเคยผ่าน รักนี้ที่ไม่มีทาง",
+          "roman": "rák nán thîi rao khəəy phàan rák níi thîi mâi mii thaang",
+          "english": "That love we once went through—this love that has no way",
+          "chinese": "那段我們曾經走過的愛，這段已經不可能……",
+          "note": "Review：歌詞將共同經歷過的愛，與如今無法改善的現實並列。",
+          "chips": [
+            "p15",
+            "v26"
+          ]
+        },
+        {
+          "id": "l048",
+          "thai": "ทำให้ดีกว่านี้",
+          "roman": "tham hâi dii gwàa níi",
+          "english": "to be made any better than this.",
+          "chinese": "再變得比現在更好了。",
+          "note": "Review：作為最後核心句，確認這段感情已無法修復。",
+          "chips": [
+            "p16",
+            "v27"
+          ]
+        },
+        {
+          "id": "l049",
+          "thai": "โว้โอ วู้ฮู (เย้)",
+          "roman": "wôo-oo wúu-huu (yée)",
+          "english": "Whoa-oh, woo-hoo (yeah).",
+          "chinese": "喔喔、嗚呼——（耶）。",
+          "note": "結尾的無實義哼唱，依歌詞來源保留原貌。",
+          "chips": []
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "p01",
+      "thai": "อยู่ท่ามกลาง + 名詞",
+      "roman": "yùu thâam-glaang + noun",
+      "english": "to be amid / surrounded by…",
+      "chinese": "置身於……之中",
+      "level": "Useful"
+    },
+    {
+      "id": "p02",
+      "thai": "แต่ทำไม…กลับ…",
+      "roman": "dtɛ̀ɛ tham-mai… glàp…",
+      "english": "but why does… instead…?",
+      "chinese": "但為什麼……反而……？",
+      "level": "Useful"
+    },
+    {
+      "id": "p03",
+      "thai": "เหมือนว่า + 子句",
+      "roman": "mʉ̌an wâa + clause",
+      "english": "it seems as though…",
+      "chinese": "彷彿……／好像……",
+      "level": "Core"
+    },
+    {
+      "id": "p04",
+      "thai": "กำลังค่อย ๆ + 動詞",
+      "roman": "gam-lang khɔ̂i khɔ̂i + verb",
+      "english": "to be gradually doing…",
+      "chinese": "正在逐漸……",
+      "level": "Useful"
+    },
+    {
+      "id": "p05",
+      "thai": "เคยพา + 人 + ไป + 地方",
+      "roman": "khəəy phaa + person + bpai + place",
+      "english": "used to take someone to…",
+      "chinese": "曾經帶某人去……",
+      "level": "Core"
+    },
+    {
+      "id": "p06",
+      "thai": "ไม่มีใคร มีเพียงแค่…",
+      "roman": "mâi mii khrai mii phiiang khɛ̂ɛ…",
+      "english": "there is no one, only…",
+      "chinese": "沒有任何人，只有……",
+      "level": "Extension"
+    },
+    {
+      "id": "p07",
+      "thai": "ให้ + 人 + 動詞",
+      "roman": "hâi + person + verb",
+      "english": "to make / cause someone to…",
+      "chinese": "讓某人……",
+      "level": "Useful"
+    },
+    {
+      "id": "p08",
+      "thai": "ทำให้ + 人 + 動詞",
+      "roman": "tham hâi + person + verb",
+      "english": "to make someone do / feel…",
+      "chinese": "使某人……／讓某人……",
+      "level": "Core"
+    },
+    {
+      "id": "p09",
+      "thai": "ยัง + 動詞",
+      "roman": "yang + verb",
+      "english": "still…",
+      "chinese": "仍然……",
+      "level": "Core"
+    },
+    {
+      "id": "p10",
+      "thai": "ยังคง + 動詞／狀態",
+      "roman": "yang khong + verb/state",
+      "english": "to still remain…",
+      "chinese": "依然維持……",
+      "level": "Core"
+    },
+    {
+      "id": "p11",
+      "thai": "คงไม่ได้ + 動詞",
+      "roman": "khong mâi dâai + verb",
+      "english": "probably will not / may not be able to…",
+      "chinese": "恐怕不會／大概無法……",
+      "level": "Useful"
+    },
+    {
+      "id": "p12",
+      "thai": "ไม่มีทาง + 動詞",
+      "roman": "mâi mii thaang + verb",
+      "english": "there is no way to…",
+      "chinese": "不可能……／沒有辦法……",
+      "level": "Core"
+    },
+    {
+      "id": "p13",
+      "thai": "วนแบบนี้ทุกครั้งไป",
+      "roman": "won bɛ̀ɛp níi thúk khráng bpai",
+      "english": "to repeat like this every time",
+      "chinese": "每一次都像這樣反覆循環",
+      "level": "Useful"
+    },
+    {
+      "id": "p14",
+      "thai": "ยังไม่ + 動詞",
+      "roman": "yang mâi + verb",
+      "english": "still have not…",
+      "chinese": "到現在仍然沒有……",
+      "level": "Core"
+    },
+    {
+      "id": "p15",
+      "thai": "สิ่งที่เราเคยผ่าน",
+      "roman": "sìng thîi rao khəəy phàan",
+      "english": "something we once went through",
+      "chinese": "我們曾共同經歷過的事",
+      "level": "Useful"
+    },
+    {
+      "id": "p16",
+      "thai": "ทำให้ดีขึ้น／ทำให้ดีกว่านี้",
+      "roman": "tham hâi dii khʉ̂n / tham hâi dii gwàa níi",
+      "english": "to make it better / make it better than this",
+      "chinese": "使它變得更好／使它比現在更好",
+      "level": "Core"
+    },
+    {
+      "id": "p17",
+      "thai": "นึกเรื่อง + 名詞",
+      "roman": "nʉ́k rʉ̂ang + noun",
+      "english": "to think about / recall…",
+      "chinese": "想起……的事情",
+      "level": "Useful"
+    },
+    {
+      "id": "p18",
+      "thai": "เป็นอย่างที่ฝัน",
+      "roman": "bpen yàang thîi fǎn",
+      "english": "to be as one dreamed",
+      "chinese": "成為夢想中的樣子",
+      "level": "Useful"
+    },
+    {
+      "id": "p19",
+      "thai": "โชคดีที่ + 子句",
+      "roman": "chôok-dii thîi + clause",
+      "english": "to be lucky that…",
+      "chinese": "很幸運能夠……",
+      "level": "Core"
+    },
+    {
+      "id": "p20",
+      "thai": "มี + 人 + อยู่ + 地方",
+      "roman": "mii + person + yùu + place",
+      "english": "to have someone present at…",
+      "chinese": "某人在某個地方",
+      "level": "Useful"
+    },
+    {
+      "id": "p21",
+      "thai": "เป็นแค่ + 名詞",
+      "roman": "bpen khɛ̂ɛ + noun",
+      "english": "to be only / merely…",
+      "chinese": "只不過是……",
+      "level": "Core"
+    }
+  ],
+  "vocab": [
+    {
+      "id": "v01",
+      "thai": "ท่ามกลาง",
+      "roman": "thâam-glaang",
+      "english": "amid; in the middle of",
+      "chinese": "在……之中",
+      "level": "Useful"
+    },
+    {
+      "id": "v02",
+      "thai": "เป็นล้าน",
+      "roman": "bpen láan",
+      "english": "in the millions",
+      "chinese": "多達數百萬",
+      "level": "Extension"
+    },
+    {
+      "id": "v03",
+      "thai": "กลับ",
+      "roman": "glàp",
+      "english": "instead; on the contrary",
+      "chinese": "反而、卻",
+      "level": "Core"
+    },
+    {
+      "id": "v04",
+      "thai": "อ้างว้าง",
+      "roman": "âang-wáang",
+      "english": "lonely; desolate",
+      "chinese": "孤寂、寂寞",
+      "level": "Useful"
+    },
+    {
+      "id": "v05",
+      "thai": "รอบตัว",
+      "roman": "rɔ̂ɔp-dtua",
+      "english": "surroundings; around oneself",
+      "chinese": "周遭、身邊",
+      "level": "Core"
+    },
+    {
+      "id": "v06",
+      "thai": "วุ่นวาย",
+      "roman": "wûn-waai",
+      "english": "chaotic; hectic",
+      "chinese": "混亂、忙亂",
+      "level": "Core"
+    },
+    {
+      "id": "v07",
+      "thai": "ค่อย ๆ",
+      "roman": "khɔ̂i khɔ̂i",
+      "english": "gradually; slowly",
+      "chinese": "漸漸地、慢慢地",
+      "level": "Core"
+    },
+    {
+      "id": "v08",
+      "thai": "หายไป",
+      "roman": "hǎai bpai",
+      "english": "to disappear; fade away",
+      "chinese": "消失、不見",
+      "level": "Core"
+    },
+    {
+      "id": "v09",
+      "thai": "เคย",
+      "roman": "khəəy",
+      "english": "ever; used to",
+      "chinese": "曾經",
+      "level": "Core"
+    },
+    {
+      "id": "v10",
+      "thai": "พา",
+      "roman": "phaa",
+      "english": "to take; bring someone",
+      "chinese": "帶某人去",
+      "level": "Core"
+    },
+    {
+      "id": "v11",
+      "thai": "เพียงแค่",
+      "roman": "phiiang khɛ̂ɛ",
+      "english": "only; merely",
+      "chinese": "僅僅、只有",
+      "level": "Useful"
+    },
+    {
+      "id": "v12",
+      "thai": "ตัวฉัน",
+      "roman": "dtua chǎn",
+      "english": "myself; me",
+      "chinese": "我自己",
+      "level": "Useful"
+    },
+    {
+      "id": "v13",
+      "thai": "แก้ว",
+      "roman": "gɛ̂ɛw",
+      "english": "glass; cup",
+      "chinese": "杯子、玻璃杯",
+      "level": "Core"
+    },
+    {
+      "id": "v14",
+      "thai": "ริน",
+      "roman": "rin",
+      "english": "to pour a drink",
+      "chinese": "斟、倒飲料",
+      "level": "Useful"
+    },
+    {
+      "id": "v15",
+      "thai": "คิดถึง",
+      "roman": "khít-thʉ̌ng",
+      "english": "to miss; think of",
+      "chinese": "想念、想起",
+      "level": "Core"
+    },
+    {
+      "id": "v16",
+      "thai": "บรรยากาศ",
+      "roman": "ban-yaa-gàat",
+      "english": "atmosphere; ambience",
+      "chinese": "氣氛、氛圍",
+      "level": "Core"
+    },
+    {
+      "id": "v17",
+      "thai": "เดิม ๆ",
+      "roman": "dəəm dəəm",
+      "english": "the same old; unchanged",
+      "chinese": "一如往常的、相同的",
+      "level": "Core"
+    },
+    {
+      "id": "v18",
+      "thai": "จดจำ",
+      "roman": "jòt-jam",
+      "english": "to remember; retain in memory",
+      "chinese": "銘記、牢記",
+      "level": "Useful"
+    },
+    {
+      "id": "v19",
+      "thai": "เรื่องราว",
+      "roman": "rʉ̂ang-raao",
+      "english": "story; events",
+      "chinese": "故事、種種往事",
+      "level": "Core"
+    },
+    {
+      "id": "v20",
+      "thai": "ยังคง",
+      "roman": "yang khong",
+      "english": "still remain",
+      "chinese": "依然、仍舊保持",
+      "level": "Core"
+    },
+    {
+      "id": "v21",
+      "thai": "ไม่มีทาง",
+      "roman": "mâi mii thaang",
+      "english": "no way; impossible",
+      "chinese": "不可能、沒有辦法",
+      "level": "Core"
+    },
+    {
+      "id": "v22",
+      "thai": "ฉาก",
+      "roman": "chàak",
+      "english": "scene; setting",
+      "chinese": "場景、幕",
+      "level": "Useful"
+    },
+    {
+      "id": "v23",
+      "thai": "วน",
+      "roman": "won",
+      "english": "to circle; repeat in a loop",
+      "chinese": "循環、反覆",
+      "level": "Useful"
+    },
+    {
+      "id": "v24",
+      "thai": "ยังไม่ลืม",
+      "roman": "yang mâi lʉʉm",
+      "english": "still have not forgotten",
+      "chinese": "仍然沒有忘記",
+      "level": "Core"
+    },
+    {
+      "id": "v25",
+      "thai": "ภาพอดีต",
+      "roman": "phâap à-dìit",
+      "english": "images of the past",
+      "chinese": "過去的畫面",
+      "level": "Useful"
+    },
+    {
+      "id": "v26",
+      "thai": "เคยผ่าน",
+      "roman": "khəəy phàan",
+      "english": "to have gone through",
+      "chinese": "曾經歷、曾一起走過",
+      "level": "Useful"
+    },
+    {
+      "id": "v27",
+      "thai": "ดีกว่านี้",
+      "roman": "dii gwàa níi",
+      "english": "better than this",
+      "chinese": "比現在更好",
+      "level": "Core"
+    },
+    {
+      "id": "v28",
+      "thai": "นึก",
+      "roman": "nʉ́k",
+      "english": "to think of; recall",
+      "chinese": "想起、想到",
+      "level": "Core"
+    },
+    {
+      "id": "v29",
+      "thai": "อย่างที่ฝัน",
+      "roman": "yàang thîi fǎn",
+      "english": "as dreamed",
+      "chinese": "如夢想中的樣子",
+      "level": "Useful"
+    },
+    {
+      "id": "v30",
+      "thai": "โชคดี",
+      "roman": "chôok-dii",
+      "english": "lucky; fortunate",
+      "chinese": "幸運",
+      "level": "Core"
+    },
+    {
+      "id": "v31",
+      "thai": "ภาพความทรงจำ",
+      "roman": "phâap khwaam-song-jam",
+      "english": "an image in one’s memory",
+      "chinese": "記憶中的畫面",
+      "level": "Useful"
+    },
+    {
+      "id": "v32",
+      "thai": "ตรงนั้น",
+      "roman": "dtrong nán",
+      "english": "right there",
+      "chinese": "就在那裡",
+      "level": "Core"
+    },
+    {
+      "id": "v33",
+      "thai": "เป็นแค่ความฝัน",
+      "roman": "bpen khɛ̂ɛ khwaam-fǎn",
+      "english": "to be only a dream",
+      "chinese": "只是一場夢",
+      "level": "Useful"
+    }
+  ],
+  "vocabDefs": {
+    "v01": {
+      "thai": "ท่ามกลาง",
+      "roman": "thâam-glaang",
+      "english": "amid; in the middle of",
+      "chinese": "位於許多人或事物之中，常搭配 อยู่ท่ามกลาง。"
+    },
+    "v02": {
+      "thai": "เป็นล้าน",
+      "roman": "bpen láan",
+      "english": "in the millions",
+      "chinese": "表示數量極多；歌詞中屬誇張用法。"
+    },
+    "v03": {
+      "thai": "กลับ",
+      "roman": "glàp",
+      "english": "instead; on the contrary",
+      "chinese": "在此不是「返回」，而是表示結果與預期相反。"
+    },
+    "v04": {
+      "thai": "อ้างว้าง",
+      "roman": "âang-wáang",
+      "english": "lonely; desolate",
+      "chinese": "比 เหงา 更帶有空蕩、孤寂的畫面感。"
+    },
+    "v05": {
+      "thai": "รอบตัว",
+      "roman": "rɔ̂ɔp-dtua",
+      "english": "surroundings; around oneself",
+      "chinese": "自己周圍的人、事物或環境。"
+    },
+    "v06": {
+      "thai": "วุ่นวาย",
+      "roman": "wûn-waai",
+      "english": "chaotic; hectic",
+      "chinese": "可形容環境吵雜混亂，也可形容事情繁忙複雜。"
+    },
+    "v07": {
+      "thai": "ค่อย ๆ",
+      "roman": "khɔ̂i khɔ̂i",
+      "english": "gradually; slowly",
+      "chinese": "表示動作或變化緩慢、逐步進行。"
+    },
+    "v08": {
+      "thai": "หายไป",
+      "roman": "hǎai bpai",
+      "english": "to disappear; fade away",
+      "chinese": "從原本存在的狀態中消失、不見。"
+    },
+    "v09": {
+      "thai": "เคย",
+      "roman": "khəəy",
+      "english": "ever; used to",
+      "chinese": "表示過去曾有過某種經驗或狀態。"
+    },
+    "v10": {
+      "thai": "พา",
+      "roman": "phaa",
+      "english": "to take; bring someone",
+      "chinese": "帶著某人一起前往某處。"
+    },
+    "v11": {
+      "thai": "เพียงแค่",
+      "roman": "phiiang khɛ̂ɛ",
+      "english": "only; merely",
+      "chinese": "較有書面或歌詞感的「只有」，口語常簡化為 แค่。"
+    },
+    "v12": {
+      "thai": "ตัวฉัน",
+      "roman": "dtua chǎn",
+      "english": "myself; me",
+      "chinese": "以 ตัว 加人稱代詞來加強「本人、自己」的感覺。"
+    },
+    "v13": {
+      "thai": "แก้ว",
+      "roman": "gɛ̂ɛw",
+      "english": "glass; cup",
+      "chinese": "可指杯子，也可作杯子的量詞。"
+    },
+    "v14": {
+      "thai": "ริน",
+      "roman": "rin",
+      "english": "to pour a drink",
+      "chinese": "通常用於將酒、水或飲料倒入杯中。"
+    },
+    "v15": {
+      "thai": "คิดถึง",
+      "roman": "khít-thʉ̌ng",
+      "english": "to miss; think of",
+      "chinese": "既可表示想念某人，也可表示想到某人或某事。"
+    },
+    "v16": {
+      "thai": "บรรยากาศ",
+      "roman": "ban-yaa-gàat",
+      "english": "atmosphere; ambience",
+      "chinese": "某個地方或場合帶給人的整體感受與氣氛。"
+    },
+    "v17": {
+      "thai": "เดิม ๆ",
+      "roman": "dəəm dəəm",
+      "english": "the same old; unchanged",
+      "chinese": "重複 เดิม 會帶出「還是老樣子、一成不變」的感覺。"
+    },
+    "v18": {
+      "thai": "จดจำ",
+      "roman": "jòt-jam",
+      "english": "to remember; retain in memory",
+      "chinese": "比 จำ 更強調牢牢記住、銘記在心。"
+    },
+    "v19": {
+      "thai": "เรื่องราว",
+      "roman": "rʉ̂ang-raao",
+      "english": "story; events",
+      "chinese": "可指一段故事，也可泛指曾發生的各種事情。"
+    },
+    "v20": {
+      "thai": "ยังคง",
+      "roman": "yang khong",
+      "english": "still remain",
+      "chinese": "表示某狀態延續至今，並沒有改變。"
+    },
+    "v21": {
+      "thai": "ไม่มีทาง",
+      "roman": "mâi mii thaang",
+      "english": "no way; impossible",
+      "chinese": "強烈表示某件事不可能發生或沒有辦法做到。"
+    },
+    "v22": {
+      "thai": "ฉาก",
+      "roman": "chàak",
+      "english": "scene; setting",
+      "chinese": "可指戲劇中的一幕，也可比喻人生或回憶中的場景。"
+    },
+    "v23": {
+      "thai": "วน",
+      "roman": "won",
+      "english": "to circle; repeat in a loop",
+      "chinese": "表示繞圈、反覆，常用於思緒或事件不斷重演。"
+    },
+    "v24": {
+      "thai": "ยังไม่ลืม",
+      "roman": "yang mâi lʉʉm",
+      "english": "still have not forgotten",
+      "chinese": "表示直到目前為止，遺忘這件事仍未發生。"
+    },
+    "v25": {
+      "thai": "ภาพอดีต",
+      "roman": "phâap à-dìit",
+      "english": "images of the past",
+      "chinese": "腦中浮現的過往畫面。"
+    },
+    "v26": {
+      "thai": "เคยผ่าน",
+      "roman": "khəəy phàan",
+      "english": "to have gone through",
+      "chinese": "曾經經歷過，常用於事件、困難或一段關係。"
+    },
+    "v27": {
+      "thai": "ดีกว่านี้",
+      "roman": "dii gwàa níi",
+      "english": "better than this",
+      "chinese": "比較結構 ดี + กว่า + นี้，表示比目前狀態更好。"
+    },
+    "v28": {
+      "thai": "นึก",
+      "roman": "nʉ́k",
+      "english": "to think of; recall",
+      "chinese": "在腦中想到或回想起某件事。"
+    },
+    "v29": {
+      "thai": "อย่างที่ฝัน",
+      "roman": "yàang thîi fǎn",
+      "english": "as dreamed",
+      "chinese": "符合自己曾經夢想或想像的樣子。"
+    },
+    "v30": {
+      "thai": "โชคดี",
+      "roman": "chôok-dii",
+      "english": "lucky; fortunate",
+      "chinese": "形容運氣好；โชคดีที่… 可表示「很幸運能……」。"
+    },
+    "v31": {
+      "thai": "ภาพความทรงจำ",
+      "roman": "phâap khwaam-song-jam",
+      "english": "an image in one’s memory",
+      "chinese": "帶有視覺畫面的回憶或記憶片段。"
+    },
+    "v32": {
+      "thai": "ตรงนั้น",
+      "roman": "dtrong nán",
+      "english": "right there",
+      "chinese": "指明確的那個位置，比單獨說 ที่นั่น 更有「就在那裡」的感覺。"
+    },
+    "v33": {
+      "thai": "เป็นแค่ความฝัน",
+      "roman": "bpen khɛ̂ɛ khwaam-fǎn",
+      "english": "to be only a dream",
+      "chinese": "表示某件美好的事如今不真實、無法再觸及。"
+    }
+  },
+  "totals": {
+    "lyrics": 49,
+    "patterns": 21,
+    "vocab": 33
+  },
+  "searchTerms": [
+    "บรรยากาศ",
+    "ban-yaa-gàat",
+    "banyakat",
+    "Atmosphere",
+    "Only Monday",
+    "คิดถึง",
+    "ความทรงจำ",
+    "เดิม ๆ",
+    "ที่เดิม ๆ",
+    "ยังคง",
+    "ยังไม่ลืม",
+    "ไม่มีทาง",
+    "อ้างว้าง",
+    "ทำให้",
+    "ภาพอดีต",
+    "lost love",
+    "memories",
+    "old places",
+    "loneliness",
+    "失戀",
+    "回憶",
+    "舊地重遊"
+  ],
+  "possibleQuestions": [
+    "Spotify 截圖中的完整顯示順序可確認為：Verse 1 → Chorus → Verse 2 → Chorus → Chorus → Vocal Break → Final Chorus；目前已依此順序整理。",
+    "使用者貼出的第一段有「มันให้ฉันนั้นคิดถึงเธอ」，第二段則是「มันทำให้ฉันนั้นคิดถึงเธอ」；已依原文差異保留。",
+    "「กับแก้วที่มันรินบาง ๆ」中的 รินบาง ๆ 屬較具畫面感的歌詞用法；目前翻譯為杯中飲料被淺淺、緩緩斟入。",
+    "英文歌名目前依泰文歌名直譯為「Atmosphere」；若樂團另有官方英文標題，可再替換。"
+  ]
+};
+const STORE_KEY = SONG.storageKey;
+let state = {favorite:{}, learned:{}, reviewed:{}, mode:'normal'};
+let reviewPool = [];
+let currentReviewMode = 'all';
+
+function load(){
+  try{
+    state=Object.assign(state,JSON.parse(localStorage.getItem(STORE_KEY)||'{}'));
+  }catch(e){}
+  state.favorite=state.favorite||{};
+  state.learned=state.learned||{};
+  state.reviewed=state.reviewed||{};
+}
+function save(){
+  localStorage.setItem(STORE_KEY,JSON.stringify(state));
+  updateAllStatus();
+}
+function allLines(){return SONG.sections.flatMap(sec=>sec.lines.map((l,i)=>({type:'line',id:`line-${sec.id}-${i}`,section:sec.title,...l})));}
+function allPatterns(){return SONG.patterns.map(x=>({type:'pattern',id:x.id,...x}));}
+function allVocab(){return SONG.vocab.map(x=>({type:'vocab',id:x.id,...x}));}
+function itemKey(type, thai){return `${type}:${thai}`}
+function isFav(type,thai){return !!state.favorite[itemKey(type,thai)]}
+function isLearned(type,thai){return !!state.learned[itemKey(type,thai)]}
+function isReviewed(type,thai){return !!state.reviewed[itemKey(type,thai)]}
+function toggleFav(type,thai){
+  const k=itemKey(type,thai);
+  state.favorite[k]=!state.favorite[k];
+  if(!state.favorite[k]) delete state.favorite[k];
+  save();
+}
+function toggleLearned(type,thai){
+  const k=itemKey(type,thai);
+  state.learned[k]=!state.learned[k];
+  if(!state.learned[k]) delete state.learned[k];
+  save();
+}
+function toggleReviewed(type,thai){
+  const k=itemKey(type,thai);
+  state.reviewed[k]=!state.reviewed[k];
+  if(!state.reviewed[k]) delete state.reviewed[k];
+  save();
+}
+function resetReview(){
+  state.reviewed={};
+  save();
+  renderReview(currentReviewMode);
+}
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function js(s){return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,' ')}
+function defFor(chip){
+  const direct=SONG.vocabDefs[chip];
+  if(direct){
+    if(Array.isArray(direct)) return {thai:chip,roman:direct[0],english:direct[1],chinese:direct[2]};
+    return direct;
+  }
+  const pat=SONG.patterns.find(p=>p.id===chip || p.thai===chip);
+  if(pat)return pat;
+  const vocab=SONG.vocab.find(v=>v.id===chip || v.thai===chip);
+  if(vocab)return vocab;
+  return {thai:chip,english:'',chinese:''};
+}
+function chipHtml(c){const d=defFor(c);const thai=d.thai||c;return `<span class="chip" data-thai="${esc(thai)}" onclick="event.stopPropagation();speak('${js(thai)}',this)"><b>${esc(thai)}</b>${d.english?`<span class="chip-en">${esc(d.english)}</span>`:''}</span>`}
+function lineHtml(l,i,secId,secTitle){const id=`line-${secId}-${i}`;return `<div class="line" data-search="${esc([l.thai,l.roman,l.english,l.chinese,l.note,...(l.chips||[])].join(' ').toLowerCase())}" data-id="${id}" data-thai="${esc(l.thai)}" onclick="speak('${js(l.thai)}',this)"><div class="th">${esc(l.thai)}</div><div class="rom">${esc(l.roman)}</div><div class="en">${esc(l.english)}</div><div class="zh">${esc(l.chinese)}</div><div class="vocab">${(l.chips||[]).map(chipHtml).join('')}</div><div class="note">${esc(l.note)}</div><div class="line-actions"><button class="round fav" onclick="event.stopPropagation();toggleFav('line','${js(l.thai)}')" data-type="line" data-thai="${esc(l.thai)}" title="收藏">♥</button><button class="round learned" onclick="event.stopPropagation();toggleLearned('line','${js(l.thai)}')" data-type="line" data-thai="${esc(l.thai)}" title="已學會">✓</button></div></div>`}
+function renderLyrics(){document.getElementById('lyricsList').innerHTML=SONG.sections.map((s,idx)=>`<section class="song-section glass ${idx<2?'open':''}" id="${s.id}"><button class="sec-head" onclick="this.parentElement.classList.toggle('open')"><span><span class="sec-title">${esc(s.title)}</span><span class="sec-sub">${esc(s.sub)}</span></span><span class="arrow">⌄</span></button><div class="sec-body">${s.lines.map((l,i)=>lineHtml(l,i,s.id,s.title)).join('')}</div></section>`).join('')}
+function studyCard(x,type,isReview=false){
+  const secondAction=isReview
+    ? `<button class="round reviewed" onclick="event.stopPropagation();toggleReviewed('${type}','${js(x.thai)}')" data-type="${type}" data-thai="${esc(x.thai)}" title="本輪已複習">✓</button>`
+    : `<button class="round learned" onclick="event.stopPropagation();toggleLearned('${type}','${js(x.thai)}')" data-type="${type}" data-thai="${esc(x.thai)}" title="已學會">✓</button>`;
+  return `<div class="glass study-card" data-search="${esc([x.thai,x.roman,x.english,x.chinese,x.level].join(' ').toLowerCase())}" onclick="speak('${js(x.thai)}',this)"><div class="th">${esc(x.thai)}</div><div class="rom">${esc(x.roman)}</div><div class="en">${esc(x.english)}</div><div class="zh">${esc(x.chinese)}</div><span class="level">${esc(x.level||'')}</span><div class="mini-actions"><button class="round fav" onclick="event.stopPropagation();toggleFav('${type}','${js(x.thai)}')" data-type="${type}" data-thai="${esc(x.thai)}" title="收藏">♥</button>${secondAction}</div></div>`;
+}
+function renderStudy(){document.getElementById('patternList').innerHTML=SONG.patterns.map(x=>studyCard(x,'pattern')).join('');document.getElementById('vocabList').innerHTML=SONG.vocab.map(x=>studyCard(x,'vocab')).join('')}
+function updateAllStatus(){document.querySelectorAll('.fav').forEach(b=>b.classList.toggle('active',isFav(b.dataset.type,b.dataset.thai)));document.querySelectorAll('.learned').forEach(b=>b.classList.toggle('active',isLearned(b.dataset.type,b.dataset.thai))); const favCount=Object.keys(state.favorite).length; document.getElementById('favBadge').textContent=favCount; renderProgress(); if(document.getElementById('favorites').classList.contains('active'))renderFavorites(document.getElementById('favSearch').value||''); if(document.getElementById('review').classList.contains('active'))renderReview(currentReviewMode);}
+function countLearned(items,type){let total=items.length;let learned=items.filter(x=>isLearned(type,x.thai)).length;return {total,learned,pct:total?Math.round(learned/total*100):0}}
+function progressRow(lbl,obj){return `<div class="progress-row"><span class="lbl">${lbl}</span><div class="bar"><span style="width:${obj.pct}%"></span></div><span class="pct">${obj.pct}%</span></div>`}
+function renderProgress(){const l=countLearned(uniqueByThai(allLines()),'line'), p=countLearned(SONG.patterns,'pattern'), v=countLearned(SONG.vocab,'vocab');const all={total:l.total+p.total+v.total,learned:l.learned+p.learned+v.learned};all.pct=all.total?Math.round(all.learned/all.total*100):0;document.getElementById('progressBox').innerHTML=progressRow('Song',all)+progressRow('Lyrics',l)+progressRow('Patterns',p)+progressRow('Vocab',v)}
+function uniqueByThai(items){const m=new Map();items.forEach(x=>{if(!m.has(x.thai))m.set(x.thai,x)});return [...m.values()]}
+function renderFavorites(q=''){q=(q||'').toLowerCase();const groups=[['Favorite Lyrics',uniqueByThai(allLines()),'line'],['Favorite Patterns',SONG.patterns,'pattern'],['Favorite Vocabulary',SONG.vocab,'vocab']];let html='';groups.forEach(([title,items,type])=>{let arr=items.filter(x=>isFav(type,x.thai)).filter(x=>[x.thai,x.roman,x.english,x.chinese,x.note].join(' ').toLowerCase().includes(q));html+=`<div class="fav-block"><h3>${title}</h3>${arr.length?`<div class="study-list">${arr.map(x=>studyCard(x,type)).join('')}</div>`:'<div class="empty">目前沒有收藏</div>'}</div>`});document.getElementById('favoriteList').innerHTML=html;updateAllStatusNoRender()}
+function updateAllStatusNoRender(){
+  document.querySelectorAll('.fav').forEach(b=>b.classList.toggle('active',isFav(b.dataset.type,b.dataset.thai)));
+  document.querySelectorAll('.learned').forEach(b=>b.classList.toggle('active',isLearned(b.dataset.type,b.dataset.thai)));
+  document.querySelectorAll('.reviewed').forEach(b=>b.classList.toggle('active',isReviewed(b.dataset.type,b.dataset.thai)));
+}
+function groupBlock(title,items,type,open=true,isReview=false){
+  return `<div class="collapsible-group ${open?'':'closed'}"><button class="group-head" onclick="this.parentElement.classList.toggle('closed')"><span><span class="group-title">${title}</span><span class="group-count">${items.length}</span></span><span class="arrow">⌄</span></button><div class="group-body">${items.length?`<div class="study-list">${items.map(x=>studyCard(x,type||x.type,isReview)).join('')}</div>`:'<div class="empty">目前沒有項目</div>'}</div></div>`;
+}
+function reviewEligible(x){
+  return isLearned(x.type,x.thai) && !isReviewed(x.type,x.thai);
+}
+function renderReview(mode='all'){
+  currentReviewMode=mode;
+  let lines=uniqueByThai(allLines()).map(x=>({...x,type:'line'})).filter(reviewEligible);
+  let patterns=SONG.patterns.map(x=>({...x,type:'pattern'})).filter(reviewEligible);
+  let vocab=SONG.vocab.map(x=>({...x,type:'vocab'})).filter(reviewEligible);
+
+  if(mode==='fav'){
+    lines=lines.filter(x=>isFav(x.type,x.thai));
+    patterns=patterns.filter(x=>isFav(x.type,x.thai));
+    vocab=vocab.filter(x=>isFav(x.type,x.thai));
+  }
+
+  reviewPool=[...lines,...patterns,...vocab];
+  document.getElementById('reviewList').innerHTML=reviewPool.length
+    ? groupBlock('Lyrics',lines,'line',true,true)
+      + groupBlock('Patterns',patterns,'pattern',false,true)
+      + groupBlock('Vocabulary',vocab,'vocab',false,true)
+    : '<div class="empty">目前沒有可複習的已學會項目</div>';
+  updateAllStatusNoRender();
+}
+function shuffleReview(){
+  currentReviewMode='all';
+  let items=[
+    ...uniqueByThai(allLines()).map(x=>({...x,type:'line'})),
+    ...SONG.patterns.map(x=>({...x,type:'pattern'})),
+    ...SONG.vocab.map(x=>({...x,type:'vocab'}))
+  ].filter(reviewEligible).sort(()=>Math.random()-.5);
+  reviewPool=items;
+  document.getElementById('reviewList').innerHTML=items.length
+    ? groupBlock('Shuffle Review',items,null,true,true)
+    : '<div class="empty">目前沒有可複習的已學會項目</div>';
+  updateAllStatusNoRender();
+}
+function getProgressSnapshot(){
+  const uniqueLines=uniqueByThai(allLines());
+  const countLearned=(type,items)=>items.filter(x=>isLearned(type,x.thai)).length;
+  const lineLearned=countLearned('line',uniqueLines);
+  const patternLearned=countLearned('pattern',SONG.patterns);
+  const vocabLearned=countLearned('vocab',SONG.vocab);
+  const total=uniqueLines.length+SONG.patterns.length+SONG.vocab.length;
+  const learned=lineLearned+patternLearned+vocabLearned;
+  return {
+    song:{learned,total,percent:total?Math.round(learned/total*100):0},
+    lyrics:{learned:lineLearned,total:uniqueLines.length,percent:uniqueLines.length?Math.round(lineLearned/uniqueLines.length*100):0},
+    patterns:{learned:patternLearned,total:SONG.patterns.length,percent:SONG.patterns.length?Math.round(patternLearned/SONG.patterns.length*100):0},
+    vocab:{learned:vocabLearned,total:SONG.vocab.length,percent:SONG.vocab.length?Math.round(vocabLearned/SONG.vocab.length*100):0}
+  };
+}
+function exportState(){
+  const payload={
+    schema:'thai-song-lab-song-state',
+    version:3,
+    exportedAt:new Date().toISOString(),
+    song:{
+      slug:SONG.slug,
+      title:SONG.title,
+      artist:SONG.artist,
+      level:SONG.level
+    },
+    progress:getProgressSnapshot(),
+    state:{
+      favorite:{...(state.favorite||{})},
+      learned:{...(state.learned||{})},
+      reviewed:{...(state.reviewed||{})},
+      mode:state.mode||'normal'
+    }
+  };
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`${SONG.slug}-progress.json`;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),0);
+  a.remove();
+}
+function importState(event){
+  const file=event.target.files && event.target.files[0];
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const data=JSON.parse(reader.result);
+      const incoming=data.state||data;
+      const incomingSlug=data.song?.slug||data.song;
+      if(data.schema && data.schema!=='thai-song-lab-song-state')throw new Error('Invalid schema');
+      if(incomingSlug && incomingSlug!==SONG.slug)throw new Error('Different song');
+      if(!incomingSlug){
+        const proceed=confirm('這份 JSON 沒有歌曲資訊，無法確認是否屬於《เดินมาส่ง (BYE)》。仍要匯入嗎？');
+        if(!proceed){
+          event.target.value='';
+          return;
+        }
+      }
+      if(!incoming.favorite && !incoming.learned && !incoming.reviewed)throw new Error('Invalid state file');
+
+      state.favorite={...(state.favorite||{}),...(incoming.favorite||{})};
+      state.learned={...(state.learned||{}),...(incoming.learned||{})};
+      state.reviewed={...(state.reviewed||{}),...(incoming.reviewed||{})};
+      if(incoming.mode)state.mode=incoming.mode;
+
+      save();
+      renderLyrics();
+      renderStudy();
+      renderFavorites(document.getElementById('favSearch')?.value||'');
+      renderReview(currentReviewMode);
+      alert('已匯入此首歌的 Favorites、Learned、Review 與學習進度。');
+    }catch(e){
+      const message=e.message==='Different song'
+        ? '匯入失敗：這份 JSON 屬於另一首歌。'
+        : '匯入失敗：請選擇有效的 Thai Song Lab JSON 檔。';
+      alert(message);
+    }
+    event.target.value='';
+    const legacyInput=document.getElementById('stateImportFile');
+    if(legacyInput)legacyInput.value='';
+  };
+  reader.readAsText(file);
+}
+function filterLyrics(q){
+  q=(q||'').toLowerCase();
+  document.querySelectorAll('#lyricsList .song-section').forEach(section=>{
+    const lines=[...section.querySelectorAll('.line')];
+    lines.forEach(el=>el.classList.toggle('hidden',q && !el.dataset.search.includes(q)));
+    if(q) section.classList.toggle('open',lines.some(el=>!el.classList.contains('hidden')));
+  });
+}
+function filterStudy(id,q){q=(q||'').toLowerCase();document.querySelectorAll(`#${id} .study-card`).forEach(el=>el.classList.toggle('hidden',q && !el.dataset.search.includes(q)))}
+function showPage(id,btn){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.top .btn').forEach(b=>b.classList.remove('active-tab'));if(btn)btn.classList.add('active-tab');if(id==='favorites')renderFavorites(document.getElementById('favSearch').value||'');if(id==='review')renderReview('all');window.scrollTo({top:0,behavior:'smooth'})}
+function setMode(mode,btn){const app=document.getElementById('app');app.className='wrap';if(mode!=='normal')app.classList.add(mode);state.mode=mode;document.querySelectorAll('.toolbar .btn').forEach(b=>b.classList.remove('mode-on'));if(btn)btn.classList.add('mode-on');save()}
+function expandAll(){document.querySelectorAll('.song-section').forEach(s=>s.classList.add('open'))}function collapseAll(){document.querySelectorAll('.song-section').forEach(s=>s.classList.remove('open'))}
+let queueToken=0;function speak(text,btn){
+  if(!('speechSynthesis' in window))return alert('此瀏覽器不支援 TTS');
+  queueToken++;
+  speechSynthesis.cancel();
+  document.querySelectorAll('.playing').forEach(el=>el.classList.remove('playing'));
+  const card = btn && btn.classList ? (btn.classList.contains('line')||btn.classList.contains('study-card') ? btn : btn.closest('.line,.study-card')) : null;
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='th-TH';
+  u.rate=.86;
+  if(card)card.classList.add('playing');
+  if(btn && btn.classList)btn.classList.add('active');
+  const clear=()=>{if(card)card.classList.remove('playing'); if(btn && btn.classList)btn.classList.remove('active')};
+  u.onend=clear;
+  u.onerror=clear;
+  speechSynthesis.speak(u);
+}
+function speakQueue(lines){if(!('speechSynthesis' in window))return alert('此瀏覽器不支援 TTS');queueToken++;const token=queueToken;speechSynthesis.cancel();let i=0;function next(){if(token!==queueToken||i>=lines.length)return;const u=new SpeechSynthesisUtterance(lines[i++]);u.lang='th-TH';u.rate=.84;u.onend=()=>setTimeout(next,420);speechSynthesis.speak(u)}next()}
+function playVisibleLyrics(){
+  const lines=[...document.querySelectorAll('#lyricsList .song-section.open .line:not(.hidden)')]
+    .map(el=>el.dataset.thai)
+    .filter(t=>!t.startsWith('Every night')&&!t.startsWith('Tryna')&&!t.startsWith('And I'));
+  speakQueue(lines);
+}
+function speakAll(){showPage('lyrics');expandAll();const lines=SONG.sections.flatMap(s=>s.lines.map(l=>l.thai).filter(t=>!t.startsWith('Every night')&&!t.startsWith('Tryna')&&!t.startsWith('And I')));speakQueue(lines)}
+function init(){document.getElementById('artist').textContent=SONG.artist;document.getElementById('title').textContent=SONG.title;document.getElementById('subtitle').textContent=`${SONG.romanTitle} · ${SONG.englishTitle}`;load();renderLyrics();renderStudy();setMode(state.mode||'normal');updateAllStatus()}
+init();
+</script>
+</body>
+</html>
